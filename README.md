@@ -1,22 +1,40 @@
 # My Portfolio
 
-Welcome to my portfolio website! This site showcases my work as a QA Engineer.
+Welcome to my personal portfolio! This site highlights my journey as a QA Engineer, with an emphasis on current work, skills, tools, and ways to get in touch.
 
 ## Live Site
 
-You can view my portfolio live at [https://maniziva.github.io/MyPortfolio/](https://maniziva.github.io/MyPortfolio/)
+- **URL:** [https://maniziva.github.io/MyPortfolio/](https://maniziva.github.io/MyPortfolio/)
 
-## Table of Contents
+## Highlights
 
-- [About](#about)
-- [Contact](#contact)
+- [Home](#home-section)
+- [Resume](#resume-section)
+- [Skills](#skills-section)
+- [Contact](#contact-section)
 
-## About
+## Home
 
 This portfolio website is a collection of my work as a QA Engineer. It includes information about my background and the projects I have worked on.
 
 For more details, visit the [Projects](https://maniziva.github.io/MyPortfolio/#projects) section of my portfolio.
 
+## Resume
+
+Each entry links to responsibilities, automation work, and collaboration highlights.
+
+## Skills
+
+Key technical strengths visualized through progress bars:
+
+- Playwright with TypeScript, Selenium with Java, Cucumber, CircleCI.
+- Manual testing, API testing with Postman, SQL, Apache JMeter.
+- Tool familiarity includes Cursor AI, GitHub, Jira, VS Code, Copilot, and more.
+
 ## Contact
 
-Feel free to reach out to me via email at [manizivamsd@gmail.com](mailto:manizivamsd@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/manikandan-adaikalam/).
+- Email: [manizivamsd@gmail.com](mailto:manizivamsd@gmail.com)
+- LinkedIn: [https://www.linkedin.com/in/manikandan-adaikalam/](https://www.linkedin.com/in/manikandan-adaikalam/)
+- GitHub: [https://github.com/maniziva](https://github.com/maniziva)
+
+Thanks for visiting! Let me know if you have feedback or collaboration ideas.
