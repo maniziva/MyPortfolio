@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V9VTEMESXT"></script>
@@ -25,6 +24,41 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" type="image/png" href="images/favicon-32x32.png">
+	<style>
+		@media (min-width: 768px) {
+			.hero-text-padding {
+				padding-top: 100px !important;
+			}
+			.hero-image-padding {
+				padding-top: 130px !important;
+			}
+		}
+		@media (max-width: 767px) {
+			.hero-text-padding {
+				padding-top: 20px !important;
+				justify-content: center !important;
+			}
+			.hero-text-padding .text {
+				text-align: center !important;
+			}
+			.hero-image-padding {
+				padding-top: 20px !important;
+				margin-bottom: 30px !important;
+				justify-content: center !important;
+			}
+			#home-section {
+				height: auto !important;
+				min-height: 50vh;
+			}
+			.home-slider {
+				height: auto !important;
+				min-height: 60vh;
+			}
+			.slider-text {
+				justify-content: center !important;
+			}
+		}
+	</style>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -39,7 +73,6 @@
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav nav ml-auto">
 					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<!-- <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li> -->
 					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
@@ -47,20 +80,24 @@
 			</div>
 		</div>
 	</nav>
-	<section id="home-section" class="hero" style="margin-top: 0vh; height: 50vh;">
+	<section id="home-section" class="hero" style="margin-top: 0vh; height: 55vh;">
 		<div class="home-slider  owl-carousel" style="height: 60vh;">
 			<div class="slider-item ">
 				<div class="overlay"></div>
 				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+					<div class="row d-md-flex no-gutters slider-text align-items-start justify-content-between"
 						data-scrollax-parent="true">
-						<div class="one-forth d-flex  align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }" style="margin-top: 0vh; height: 60vh;">
+						<div class="col-md-7 d-flex align-items-start ftco-animate hero-text-padding"
+							data-scrollax=" properties: { translateY: '0%' }" style="margin-top: 0vh; min-height: 0;">
 							<div class="text">
 								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Manikandan</span></h1>
-								<h2 class="mb-4">QA Engineer</h2>
+								<h1 class="mb-4 mt-3">I'm<br><span>Manikandan</span></h1>
+								<h2 class="mb-4">Lead - Quality</h2>
 							</div>
+						</div>
+						<div class="col-md-3 d-flex justify-content-center align-items-start ftco-animate hero-image-padding">
+							<img src="images/Manikandan_Photo.JPEG" alt="Portrait of Manikandan"
+								style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%; border: 4px solid rgba(255,255,255,0.6); box-shadow: 0 10px 25px rgba(0,0,0,0.25);">
 						</div>
 					</div>
 				</div>
@@ -71,45 +108,15 @@
 					<div class="row justify-content-center">
 						<div class="col-md-10 text-center ftco-animate">
 							<h2 class="mb-4">About Me</h2>
-							<h3 class="lead">QA Professional with 7+ years of hands-on experience in both manual and automated testing, ensuring software reliability through test execution and issue identification. Proficient with tools like Playwright, Selenium, and JMeter, committed to achieving optimal product performance in Agile settings.</h3>
+							<h3 class="lead">QA Professional with 7+ years of hands-on experience in manual and automation testing. Specializing in
+Playwright for web and API automation. Experienced in test planning, framework design, and CI/CD
+integration and contributing to high-quality software delivery in Agile environments.</h3>
 						</div>
 					</div>
 				</div>
 			</section>
 		</div>
 	</section>
-
-	<!-- <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex">
-				<div class="col-md-6 col-lg-5 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-				<div class="row justify-content-start pb-3">
-					<div class="col-md-12 heading-section ftco-animate">
-						<h1 class="big">About</h1>
-						<h2 class="mb-4">About Me</h2>
-						<ul class="about-info mt-4 px-md-0 px-2">
-							<li class="d-flex"><span>Name:</span> <span>Manikandan</span></li>
-							<li class="d-flex"><span>Date of birth:</span> <span>December 07, 1996</span></li>
-							<li class="d-flex"><span>Address:</span> <span>434, Pudumanai 1st street, Rayavaram,
-									Pudukkottai</span></li>
-							<li class="d-flex"><span>Zip code:</span> <span>622506</span></li>
-							<li class="d-flex"><span>Email:</span> <span>manizivamsd@gmail.com</span></li>
-							<li class="d-flex"><span>Phone: </span> <span>+91 8098606357</span></li>
-						</ul>
-					</div>
-				</div>
-				<div class="counter-wrap ftco-animate d-flex mt-md-3">
-				</div>
-			</div>
-		</div>
-		</div>
-	</section> -->
 
 	<section class="ftco-section ftco-no-pb" id="resume-section">
 		<div class="container">
@@ -122,46 +129,60 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">2023-2024</span>
-						<h2>QA Engineer</h2>
-						<span class="position">MoneyForward India, Chennai.</span>
-						<ul class="mt-4"></ul>
-							<li>Developed and maintained automated test scripts by using Playwright with TypeScript and integrated with CircleCI for continuous testing in the CI/CD pipeline.</li>
-							<li>Performed API testing using Postman to ensure seamless integration and functionality.</li>
-							<li>Collaborated in Agile and Scrum events, contributing to Sprint planning, daily stand-ups, and ceremonies to support project goals and improve process efficiency.</li>						</ul>
+						<span class="date">Aug 2025 - Present</span>
+						<h2>Lead - Quality</h2>
+						<span class="position">Synechron Technologies, Chennai.</span>
+						<ul class="mt-4">
+							<li>Design and implemented automated regression and
+functional test suites using Playwright with Typescript for
+web and API automation.</li>
+							<li>Independently handled smoke, sanity, regression, and
+release validation testing in an Agile environment.</li>
+							<li>Worked closely with cross-functional teams throughout
+Sprint ceremonies to ensure QA alignment for mobile
+applications.</li>
+						</ul>
 					</div>
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2018-2022</span>
-						<h2>Junior Engineer</h2>
-						<span class="position">IVTL Infoview Technologies PVT LTD, Trichy.</span>
-						<p class="mt-4">
-							<ul>
-								<li>Developed and maintained Selenium automation scripts by updating locators, fixing flaky tests, and making changes as per UI updates.</li>
-								<li>Developed test cases and conducted comprehensive functional testing generated reports, and performed regression testing for mobile applications.</li>
-								<li>Ensured accurate translation and functionality for multiple languages, including Japanese.</li>
-							</ul>
-						</p>
-					</div>
-				</div>
-
-				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">2022-2023</span>
 						<h2>Evaluation Engineer</h2>
 						<span class="position">IVTL Infoview Technologies PVT LTD, Chennai.</span>
-						<p class="mt-4">
-							<li>Migrated legacy Selenium scripts to Playwright to improve test speed and reliability</li>
+						<ul class="mt-4">
+							<li>Migrated legacy Selenium scripts to Playwright to improve test speed and reliability.</li>
 							<li>Created test cases, generated reports, and performed regression testing across projects.</li>
 							<li>Wrote JMeter and Fiddler scripts to analyze performance with bulk data and multiple users.</li>
-						</p>
+						</ul>
 					</div>
 					<div class="resume-wrap ftco-animate">
 						<span class="date">Oct 2017 - Dec 2017</span>
 						<h2>Associate</h2>
 						<span class="position">Hurix Systems Pvt Ltd, Chennai.</span>
-						<p class="mt-4">
+						<ul class="mt-4">
 							<li>Collaborated on e-book conversions and performed proofreading for Spanish educational books.</li>
-						</p>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023-2024</span>
+						<h2>QA Engineer</h2>
+						<span class="position">MoneyForward India, Chennai.</span>
+						<ul class="mt-4">
+							<li>Developed and maintained automated test scripts by using Playwright with TypeScript and integrated with CircleCI for continuous testing in the CI/CD pipeline.</li>
+							<li>Performed API testing using Postman to ensure seamless integration and functionality.</li>
+							<li>Collaborated in Agile and Scrum events, contributing to Sprint planning, daily stand-ups, and ceremonies to support project goals and improve process efficiency.</li>
+						</ul>
+					</div>
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2018-2022</span>
+						<h2>Junior Engineer</h2>
+						<span class="position">IVTL Infoview Technologies PVT LTD, Trichy.</span>
+						<ul class="mt-4">
+							<li>Developed and maintained Selenium automation scripts by updating locators, fixing flaky tests, and making changes as per UI updates.</li>
+							<li>Developed test cases and conducted comprehensive functional testing generated reports, and performed regression testing for mobile applications.</li>
+							<li>Ensured accurate translation and functionality for multiple languages, including Japanese.</li>
+						</ul>
 					</div>
 					<div class="resume-wrap ftco-animate">
 						<span class="date">2014-2017</span>
@@ -173,7 +194,7 @@
 		</div>
 		<div class="row justify-content-center mt-5">
 			<div class="col-md-6 text-center ftco-animate">
-				<p><a href="CV/Manikandan-Adaikalam-QA-Engineer-7yrsExp-Resume.pdf" class="btn btn-primary py-4 px-5"
+				<p><a href="CV/Manikandan-Adaikalam-Lead-Quality-7yrsExp-Resume.pdf" class="btn btn-primary py-4 px-5"
 						target="_blank">Download CV</a>
 				</p>
 			</div>
@@ -323,8 +344,8 @@
 				</div>
 				<div class="col-md-2 text-center ftco-animate mb-4">
 					<div class="tool-wrap">
-						<img src="images/tools-logo/testrail.png" alt="Testrail" class="img-fluid mb-2" style="height: 60px;">
-						<h5>Testrail</h5>
+						<img src="images/tools-logo/cursor.jpeg" alt="Cursor AI" class="img-fluid mb-2" style="height: 60px;">
+						<h5>Cursor</h5>
 					</div>
 				</div>
 			</div>
